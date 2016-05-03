@@ -138,7 +138,7 @@ $(function(){
 				                        {x2;if:v:key == v:data['questionselectnumber']}
 				                        {x2;eval: break;}
 				                        {x2;endif}
-				                        <label class="checkbox inline"><input type="checkbox" name="question[{x2;v:data['questionid']}]" rel="{x2;v:data['questionid']}" value="{x2;v:so}" {x2;if:v:so == $sessionvars['examsessionuseranswer'][v:data['questionid']]}checked{x2;endif}/>{x2;v:so} </label>
+				                        <label class="checkbox inline"><input type="checkbox" name="question[{x2;v:data['questionid']}][{x2;v:key}]" rel="{x2;v:data['questionid']}" value="{x2;v:so}" {x2;if:v:so == $sessionvars['examsessionuseranswer'][v:data['questionid']]}checked{x2;endif}/>{x2;v:so} </label>
 				                        {x2;endtree}
 			                        {x2;elseif:v:quest['questchoice'] == 6}
 				                        <input type="text" name="question[{x2;v:data['questionid']}]" class="input-large" rel="{x2;v:data['questionid']}" value=""/>
